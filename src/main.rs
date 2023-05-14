@@ -1,3 +1,4 @@
+#![allow(unused_variables)]
 fn main() {
     // Variaveis em Rust são imutaveis por padrão
     // Declaração de variavel padrão

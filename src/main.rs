@@ -19,8 +19,14 @@ fn main() {
     let sum = float_thirty_two + cast_unsigned_eight;
     println!("{}", sum);
 
-    // cast int(não pode ser float) to char
+    // cast int(não pode ser float, assim como um "u128) to char
     let int_char = 65_u8;
     let cast_int_char = int_char as char;
     println!("{}", cast_int_char);
+
+    // Variavel mutavel using (mut)
+    let mut variable_mutavel = 10;
+
+    // Shadowing and scope
+
 }

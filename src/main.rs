@@ -28,5 +28,17 @@ fn main() {
     let mut variable_mutavel = 10;
 
     // Shadowing and scope
+    let scope_test = "Outer scope";
+    println!("{}", scope_test);
 
+    // Blocos de código tem o proprio escopo
+    {
+        // é um variavel diferente da de fora do bloco, só é acessivel dentro do bloco
+        // declarar um variavel com o mesmo nome de uma variavel de fora do bloco é chamado de
+        // shadowing
+        let scope_test = "Inner scope";
+        println!("{}", scope_test);
+        // no fim do bloco a variavel é desalocada
+    }
+    println!("{}", scope_test);
 }

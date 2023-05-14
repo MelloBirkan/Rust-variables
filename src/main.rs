@@ -34,11 +34,16 @@ fn main() {
     // Blocos de código tem o proprio escopo
     {
         // é um variavel diferente da de fora do bloco, só é acessivel dentro do bloco
-        // declarar um variavel com o mesmo nome de uma variavel de fora do bloco é chamado de
-        // shadowing
         let scope_test = "Inner scope";
         println!("{}", scope_test);
         // no fim do bloco a variavel é desalocada
     }
     println!("{}", scope_test);
+
+    // Shadowing recomendado não usar, pois pode causar confusão
+    // declarar um variavel com o mesmo nome é chamado de shadowing
+    let shadowing = "Shadowing";
+    // Sobreescreve o valor da variavel
+    let shadowing = shadowing.len();
+    println!("{}", shadowing);
 }

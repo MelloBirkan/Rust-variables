@@ -10,4 +10,7 @@ fn main() {
     // Variavel não utilizada, compilador não reclama
     let _variable_nao_ultilizada = 70;
 
+    // Casting
+    let float_thirty_two = 10.2_f32;
+    let unsigned_eight: u8 = 12;
 }
